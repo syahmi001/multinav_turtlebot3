@@ -9,7 +9,7 @@ This package provides basic operations and guides for multi-turtlebot3 navigatio
 ## Requirement / Environment
 
 - Ubuntu 16.04
-- ros Melodic
+- ros Kinetic
 
 -[Optional] Ros Development studio (for online computing, instead of local. visit: https://rds.theconstructsim.com/)
 
@@ -51,9 +51,13 @@ Copy and paste these lines in your respective terminal.
 
 
 
+
+
 - Terminal 1 : Running ros node master
 
 `roscore`
+
+
 
 
 
@@ -65,11 +69,15 @@ Copy and paste these lines in your respective terminal.
 
 
 
+
+
 - Terminal 3 : Running multiple turtlebot3 navigation stacks
 
 `export TURTLEBOT3_MODEL=burger`
 
 `roslaunch multinav_turtlebot3 turtlebot3_navigation_multi.launch`
+
+
 
 
 
