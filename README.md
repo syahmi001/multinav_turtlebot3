@@ -18,7 +18,7 @@ This package provides basic operations and guides for multi-turtlebot3 navigatio
 Please install all the necessary packages for turtlebot3. 
 For more information, follow exactly the guide from here: https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup
 
-In case you don't want to hover over the link(only recommended for the pros), you can just simply follow these codes.
+In case you don't want to hover over the link (only recommended for the pros), you can just simply follow these codes.
 (Or using the RDS online)
 
 `cd ~/catkin_ws/src/`
@@ -31,9 +31,11 @@ In case you don't want to hover over the link(only recommended for the pros), yo
 
 `cd ~/catkin_ws && catkin_make`
 
+
 ## Installation
 
-The method of installation is simply doing catkin_make in your catkin_ws. Follow these codes.
+The method of installation is by simply doing catkin_make in your catkin_ws. Follow these codes.
+
 
 `cd ~/catkin_ws/src/`
 
@@ -41,15 +43,19 @@ The method of installation is simply doing catkin_make in your catkin_ws. Follow
 
 `cd ~/catkin_ws && catkin_make`
 
-If no error found, congratulation! You have successfullt installed the package.
+If no error found, congratulation! You have successfully installed the package.
 
 ## Running the package
 
 Copy and paste these lines in your respective terminal.
 
+
+
 - Terminal 1 : Running ros node master
 
 `roscore`
+
+
 
 - Terminal 2 : Initiating and Running Gazebo environment
 
@@ -57,11 +63,15 @@ Copy and paste these lines in your respective terminal.
 
 `roslaunch multinav_turtlebot3 turtlebot3_world_multi.launch`
 
+
+
 - Terminal 3 : Running multiple turtlebot3 navigation stacks
 
 `export TURTLEBOT3_MODEL=burger`
 
 `roslaunch multinav_turtlebot3 turtlebot3_navigation_multi.launch`
+
+
 
 - Terminal 4 : Running simple script by sending different goals to different turtlebot3
 
@@ -75,11 +85,14 @@ Copy and paste these lines in your respective terminal.
 
 `rosrun multinav_turtlebot3 simple_navigation_goals.py`
 
+
 ## Results
 
 If everything runs smoothly, the expected output should be as below:
 
+
 **In Gazebo**
+
 
 
 ![Scene1](../master/media/tt1.gif)
@@ -88,6 +101,7 @@ If everything runs smoothly, the expected output should be as below:
 
 
 **In RViz**
+
 
 ![Scene1](../master/media/tt2.gif)
 
