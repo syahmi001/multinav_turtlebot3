@@ -1,0 +1,26 @@
+<launch>
+  <!-- Arguments -->
+  <arg name="model" default="burger"/>
+  <arg name="map_file" default="$(find multinav_turtlebot3)/maps/emptyHouse_map/empty_house.yaml"/>
+
+  <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)">
+   <param name="frame_id" value="/map" />
+  </node>
+  
+  <include file="$(find multinav_turtlebot3)/launch/multi_0_turtlebot3_navigation.launch">
+	  <arg name="model" value="$(arg model)" />
+  </include>
+  <include file="$(find multinav_turtlebot3)/launch/multi_1_turtlebot3_navigation.launch">
+	  <arg name="model" value="$(arg model)" />
+  </include>
+  <include file="$(find multinav_turtlebot3)/launch/multi_2_turtlebot3_navigation.launch">
+	  <arg name="model" value="$(arg model)" />
+  </include>
+  <include file="$(find multinav_turtlebot3)/launch/multi_3_turtlebot3_navigation.launch">
+	  <arg name="model" value="$(arg model)" />
+  </include>
+
+<!-- rviz -->
+ <node name="rviz" pkg="rviz" type="rviz" args="-d $(find multinav_turtlebot3)/rviz/s2.rviz"/>
+  
+</launch>
