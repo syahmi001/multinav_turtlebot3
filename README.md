@@ -75,7 +75,7 @@ Copy and paste these lines in your respective terminal.
 
 `export TURTLEBOT3_MODEL=burger`
 
-`roslaunch multinav_turtlebot3 turtlebot3_navigation_multi.launch`
+`roslaunch multinav_turtlebot3 multinav_bringup.launch`
 
 
 
